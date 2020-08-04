@@ -1,25 +1,26 @@
 .site-list {
-display: grid;
-grid-template-rows: 1 fr 1 fr 1 fr 1 fr;
-list-style: none;
-@__item {
-display: inline-block;
-width: 100 %;
-box-sizing: border-box;
-text-align: center;
-margin: 0 px;
-}
-@__page {
-font-family: PT Sans, sans-serif;
-font-size: 18 px;
-line-height: 40 px;
-font-weight: bold;
-text-transform: uppercase;
-color: #FFFFFF;
-text-decoration: none;
-padding-top: 8 px;
-padding-bottom: 5 px;
-padding-left: auto;
-padding-right: auto;
-}
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  list-style: none;
+
+  &__item {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0px;
+    vertical-align: center;
+  }
+
+  &__page {
+
+    font-size: 18px;
+    line-height: 40px;
+    color: @white;
+    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-left: auto;
+    padding-right: auto;
+  }
 }
