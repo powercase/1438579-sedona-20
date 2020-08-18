@@ -1,0 +1,35 @@
+.photo-item {
+outline: 2px red solid;
+display: flex;
+
+  @media (max-width: 767px) {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: @tablet-width) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  &__title {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+
+  &__author {
+    font-size: 14px;
+    line-height: 24px;
+    color: @gray--dark;
+    margin-top: 5px;
+  }
+
+  &__number {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+}

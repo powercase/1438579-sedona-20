@@ -1,0 +1,25 @@
+.photo {
+
+
+  &__list {
+    display: flex;
+    outline: 2px @black solid;
+    list-style: none;
+    padding: 0px;
+
+    @media (max-width: 767px) {
+    flex-direction: column;
+margin: auto;
+  }
+
+ @media (min-width: @tablet-width) and (max-width: 1199px) {
+width: 692px;
+margin: auto;
+  }
+
+@media (min-width: @desktop-width) {
+width: 724px;
+margin: 0px;
+  }
+
+}
