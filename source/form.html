@@ -37,7 +37,94 @@
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Форма отзыва</h1>
       <img src="https://via.placeholder.com/150x150" width="" height="" alt="Фото Седоны">
+<section class="review-promo">
+  <h2 class="review-promo__title">оставьте свой отзыв</h2>
+  <p class="review-promo__text">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+</section>
+<form action="https://echo.htmlacademy.ru" method="post">
+  <fieldset class="name">
+    <legend class="name__title">представьтесь:</legend>
+    <ul class="name__data">
+      <li class="name__first">
+        <input type="text" placeholder="Петр" id="name__first">
+              <label for="name__first">имя*:</label>
+      </li>
+
+      <li class="name__surname">
+        <input type="text" placeholder="Иванов" id="name__surname">
+              <label for="name__surname">фамилия*:</label>
+      </li>
+      <li class="name__patronymic">
+        <input type="text" placeholder="Александрович" id="name__patronymic">
+              <label for="name__patronymic">отчество:</label>
+      </li>
+    </ul>
+  </fieldset>
+<fieldset class="communications">
+    <legend class="communications__title">контактная информация:</legend>
+    <ul class="communications__data">
+      <li class="communications__tel">
+        <input type="tel" placeholder="Введите телефон" id="communications__tel">
+              <label for="communications__tel">контактный телефон*:</label>
+      </li>
+      <li class="communications__email">
+        <input type="email" placeholder="Введите e-mail" id="communications__email">
+              <label for="communications__email">электронная почта*:</label>
+      </li>
+    </ul>
+  </fieldset>
+
+ <fieldset class="impression">
+    <legend class="impression__title">ваше общее впечатление:</legend>
+    <ul class="impression__data">
+      <li class="impression__good">
+        <input type="radio" name="impression" value="good" id="impression__good" checked>
+              <label for="impression__good">Скорее положительное</label>
+      </li>
+<li class="impression__bad">
+        <input type="radio" name="impression" value="bad" id="impression__bad">
+              <label for="impression__bad">Скорее отрицательное</label>
+      </li>
+      <li class="impression__noanswer">
+        <input type="radio" name="impression" value="noanswer" id="impression__noanswer">
+              <label for="impression__noanswer">Затрудняюсь ответить</label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset class="attractions">
+    <legend class="attractions__title">посещенные достопримечательности:</legend>
+    <ul class="attractions__data">
+      <li class="attractions__bridge">
+        <input type="checkbox" name="bridge" id="bridge" checked>
+              <label for="bridge">Мост Дьявола</label>
+      </li>
+<li class="attractions__mountain">
+        <input type="checkbox" name="mountain" id="mountain" checked>
+              <label for="mountain">Гора-Колокол</label>
+      </li>
+      <li class="attractions__park">
+        <input type="checkbox" name="park" id="park" checked>
+              <label for="park">Слайд-парк</label>
+      </li>
+      <li class="attractions__rocks">
+        <input type="checkbox" name="rocks" id="rocks">
+              <label for="rocks">Красные скалы</label>
+      </li>
+    </ul>
+  </fieldset>
+<fieldset class="emotions">
+    <legend class="emotions__title">опишите свои эмоции:</legend>
+        <textarea name="emotions" placeholder="Опишите подробно все свои восторги" rows="5" cols="5"></textarea>
+  </fieldset>
+
+<button type="submit" class="">отправить отзыв</button>
+
+</form>
+
+
     </main>
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
