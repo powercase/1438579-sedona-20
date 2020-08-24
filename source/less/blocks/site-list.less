@@ -1,6 +1,4 @@
 .site-list {
-
-
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -19,21 +17,24 @@
     }
 
     &__page {
-
       font-size: 18px;
       line-height: 40px;
       color: @white;
       text-decoration: none;
       padding-top: 8px;
       padding-bottom: 5px;
-      padding-left: auto;
-      padding-right: auto;
     }
   }
 
+
   @media (min-width: @tablet-width) {
     display: flex;
+    justify-content: space-between;
 
+    &__item {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 
     &__page {
       font-size: 14px;
@@ -43,10 +44,7 @@
     }
 
     .main-nav__toggle {
-    display: none;
+      display: none;
+    }
   }
-  }
-
-
-
 }

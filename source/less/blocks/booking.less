@@ -1,1 +1,43 @@
+.booking {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: @gray--dark;
+    font-weight: normal;
+  }
+
+  &__button {
+    font-size: 21px;
+    line-height: 26px;
+    background-color: @button-background;
+    color: @white;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    background-color: @white;
+    flex-basis: 280px;
+
+    &__title {
+      font-size: 21px;
+      line-height: 26px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &__title {
+      font-size: 30px;
+      line-height: 26px;
+    }
+    flex-basis: 458px;
+  }
+}

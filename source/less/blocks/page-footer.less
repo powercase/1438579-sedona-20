@@ -1,17 +1,16 @@
 .page-footer {
   background-color: @white;
   display: flex;
-
-
- @media (max-width: 767px) {
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
-
-@media (min-width: @tablet-width) {
-    display: flex;
-    }
-
-
-}
-
