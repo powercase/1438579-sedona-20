@@ -1,5 +1,4 @@
 .photo {
-
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -7,35 +6,33 @@
   &__list {
     list-style: none;
     padding: 0px;
-  }
 
-  @media (max-width: 767px) {
-    &__list {
+    @media (max-width: 767px) {
       display: flex;
       flex-direction: column;
       margin: auto;
     }
-  }
 
-  @media (min-width: @tablet-width) and (max-width: 1199px) {
-    &__list {
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
 
-    &__unit--abroad {
-      grid-column-start: 1;
-      grid-column-end: 3;
+    @media (min-width: @desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0px;
     }
   }
 
 
-  @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0px;
+  &__unit--abroad {
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
 
-    &__unit--abroad {
+    @media (min-width: @desktop-width) {
       grid-column-start: 1;
       grid-column-end: 4;
     }
