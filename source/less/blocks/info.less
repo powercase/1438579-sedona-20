@@ -6,9 +6,19 @@
   flex-direction: column;
   align-items: flex-start;
 
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   &__type {
     font-size: 21px;
     line-height: 26px;
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
   }
 
   &__data {
@@ -37,60 +47,60 @@
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
-  }
 
-
-  @media (max-width: 767px) {
-    &__type {
-      font-size: 18px;
-      line-height: 26px;
-    }
-
-    &__text {
+    @media (max-width: 767px) {
       display: none;
     }
   }
 
-  @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    &__block--impression {
+  &__block--impression {
+    @media (min-width: @tablet-width) {
       order: -1;
-    }
-
-    &__block--contacts {
-      grid-column: 1 / 3;
-    }
-
-    &__block--attractions {
-      grid-column: 1 / 3;
-    }
-
-    &__block--emotions {
-      grid-column: 1 / 3;
     }
   }
 
-  @media (min-width: @tablet-width) and (max-width: 1199px) {
+  &__block--contacts {
+    @media (min-width: @tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
 
-    &__data--attractions {
+  &__block--attractions {
+    @media (min-width: @tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  &__block--emotions {
+    @media (min-width: @tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  &__data--attractions {
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
   }
 
-  @media (min-width: @desktop-width) {
-    &__data--contacts {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    &__data--attractions {
+  &__data--contacts {
+    @media (min-width: @desktop-width) {
       flex-direction: row;
       justify-content: space-between;
     }
   }
+
+  &__data--attractions {
+    @media (min-width: @desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
 
   &__button {
     display: inline-block;
