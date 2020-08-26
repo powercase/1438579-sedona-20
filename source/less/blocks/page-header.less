@@ -1,5 +1,14 @@
 .page-header {
   background-color: @white;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  &__logo {
+    order: 1;
+  }
 }

@@ -4,7 +4,34 @@ body {
   text-transform: uppercase;
   color: @black;
   background-color: @page-background;
+
+  @media (max-width: 767px) {
+    min-width: 320px;
+  }
 }
+
+.container {
+  background-color: @gray--light;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 767px) {
+    width: 640px;
+    padding: 0 20px;
+  }
+
+
+  @media (min-width: @tablet-width) and (max-width: 1199px) {
+    width: 640px;
+    padding: 0 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    padding: 0 120px;
+  }
+}
+
+
 
 
 .visually-hidden {
