@@ -2,5 +2,15 @@
   background-color: @white;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

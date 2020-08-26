@@ -2,10 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
+    <div class="container">
     <header class="page-header">
       <a class="page-header__logo">
         <img src="img/logo-mobile.svg" width="102" height="84" alt="Логотип Седона">
@@ -40,61 +42,91 @@
       <h1 class="visually-hidden">
       Фото и видео Седоны.
       </h1>
-      <section class="intro">
-        <h2 class="intro__title">
+      <section class="intro-photo">
+        <h2 class="intro-photo__title">
         фото и видео
         </h2>
-        <p class="intro__text">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.
+        <p class="intro-photo__text">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.
         </p>
       </section>
       <section class="photo">
         <h2 class="visually-hidden">Фотографии достопримечательностей Седоны</h2>
         <ul class="photo__list">
-          <li class="photo__unit">
+          <li class="photo__unit photo__unit--abroad">
             <article class="photo-item">
-              <h3 class="photo-item__title">народные просторы</h3>
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="Фото - народные просторы">
-              <p class="photo-item__author">Автор фото: Борис</p>
-              <button class="photo-item__likebtn">
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="Иконка Лайк">
-              </button>
-              <p class="photo-item__number">1350</p>
+              <img class="photo-item__img" src="https://via.placeholder.com/150x150" width="" height="" alt="Фото - неродные просторы">
+              <div class="photo-item__container">
+                <h3 class="photo-item__title">неродные просторы</h3>
+                <p class="photo-item__author">Автор фото: Борис</p>
+              </div>
+              <div class="photo-item__wrapper">
+                <button type="button" class="photo-item__likebtn">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="white"/>
+</svg>
+                </button>
+                <p class="photo-item__number">1350</p>
+              </div>
             </article>
           </li>
           <li class="photo__unit">
             <article class="photo-item">
-              <h3 class="photo-item__title">местная растительность</h3>
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="Фото - местная растительность">
-              <p class="photo-item__author">Автор фото: Сергей</p>
-              <button class="photo-item__likebtn">
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="Иконка Лайк">
-              </button>
-              <p class="photo-item__number">143</p>
+              <img class="photo-item__img" src="https://via.placeholder.com/150x150" width="" height="" alt="Фото - местная растительность">
+              <div class="photo-item__container">
+                <h3 class="photo-item__title">местная растительность</h3>
+                <p class="photo-item__author">Автор фото: Сергей</p>
+              </div>
+              <div class="photo-item__wrapper">
+                <button type="button" class="photo-item__likebtn">
+               <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="white"/>
+</svg>
+                </button>
+                <p class="photo-item__number">143</p>
+              </div>
             </article>
           </li>
           <li class="photo__unit">
             <article class="photo-item">
-              <h3 class="photo-item__title">дорога на север</h3>
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="Фото - дорога на север">
-              <p class="photo-item__author">Автор фото: Петр</p>
-              <button class="photo-item__likebtn">
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="Иконка Лайк">
-              </button>
-              <p class="photo-item__number">96</p>
+              <img class="photo-item__img" src="https://via.placeholder.com/150x150" width="" height="" alt="Фото - местная растительность">
+              <div class="photo-item__container">
+                <h3 class="photo-item__title">дорога на север</h3>
+                <p class="photo-item__author">Автор фото: Петр</p>
+              </div>
+              <div class="photo-item__wrapper">
+                <button type="button" class="photo-item__likebtn">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="white"/>
+</svg>
+                </button>
+                <p class="photo-item__number">96</p>
+              </div>
             </article>
           </li>
           <li class="photo__unit">
             <article class="photo-item">
-              <h3 class="photo-item__title">мост дьявола</h3>
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="Фото - мост дьявола">
-              <p class="photo-item__author">Автор фото: Антон</p>
-              <button class="photo-item__likebtn">
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="Иконка Лайк">
-              </button>
-              <p class="photo-item__number">254</p>
+              <img class="photo-item__img" src="https://via.placeholder.com/150x150" width="" height="" alt="Фото - мост дьявола">
+              <div class="photo-item__container">
+                <h3 class="photo-item__title">мост дьявола</h3>
+                <p class="photo-item__author">Автор фото: Антон</p>
+              </div>
+              <div class="photo-item__wrapper">
+                <button type="button" class="photo-item__likebtn">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="white"/>
+</svg>
+                </button>
+                <p class="photo-item__number">254</p>
+              </div>
             </article>
           </li>
         </ul>
+      </section>
+      <section class="promo">
+        <h3 class="promo__title">все еще сомневаетесь?</h3>
+        <p class="promo__text">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </section>
+      <section class="video">
       </section>
     </main>
     <footer class="page-footer">
@@ -119,5 +151,6 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="" width="" height="" alt="Логотип ШТМЛЬ Академии"></a>
       </div>
     </footer>
+</div>
   </body>
 </html>

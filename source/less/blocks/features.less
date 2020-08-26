@@ -1,4 +1,4 @@
-.advantages {
+.features {
 
   &__item {
     display: flex;
@@ -8,6 +8,7 @@
     color: @white;
     padding-left: 30px;
     padding-right: 30px;
+    outline: 1px solid black;
   }
 
   &__title {
@@ -30,11 +31,9 @@
 
   &__subitem {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: @gray;
     padding-left: 30px;
     padding-right: 30px;
+    outline: 1px solid black;
   }
 
   &__subtitle {
@@ -58,13 +57,16 @@
   }
 
   @media (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
 
     &__title {
       font-size: 18px;
       line-height: 26px;
     }
+
+    &__subitem {
+      background-color: @white;
+    }
+
 
     &__subtitle {
       font-size: 18px;
@@ -75,22 +77,28 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    outline: 1px solid black;
 
     &__photo {
-      order: -1;
-      grid-column-start: 1;
-      grid-column-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 4;
     }
 
-  }
+    &__title {
+      font-size: 21px;
+      line-height: 26px;
+    }
 
-  &__title {
-    font-size: 21px;
-    line-height: 26px;
-  }
+    &__subitem {
+      background-color: @gray--light;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  &__subtitle {
-    font-size: 21px;
-    line-height: 26px;
+    &__subtitle {
+      font-size: 21px;
+      line-height: 26px;
+    }
+
   }
 }

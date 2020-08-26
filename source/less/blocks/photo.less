@@ -1,11 +1,45 @@
 .photo {
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+
+
+&__unit {
+outline: 1px solid red;
+}
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    outline: 2px @black solid;
     list-style: none;
+    padding: 0px;
+
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0px;
+    }
+  }
+
+
+  &__unit--abroad {
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
   }
 }

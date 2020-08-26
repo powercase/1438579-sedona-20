@@ -1,0 +1,121 @@
+.info {
+
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__type {
+    font-size: 21px;
+    line-height: 26px;
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  &__data {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color: @gray--dark;
+  }
+
+  &__input {
+    text-transform: none;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__text {
+    color: @gray--dark;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__block--impression {
+    @media (min-width: @tablet-width) {
+      order: -1;
+    }
+  }
+
+  &__block--contacts {
+    @media (min-width: @tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  &__block--attractions {
+    @media (min-width: @tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  &__block--emotions {
+    @media (min-width: @tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  &__data--attractions {
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__data--contacts {
+    @media (min-width: @desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__data--attractions {
+    @media (min-width: @desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+
+  &__button {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    background-color: @button-background;
+    color: @white;
+    min-width: 140px;
+
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
+      min-width: 160px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: 240px;
+    }
+  }
+}

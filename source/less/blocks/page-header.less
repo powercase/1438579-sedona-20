@@ -1,3 +1,25 @@
 .page-header {
   background-color: @white;
+  width: 100%;
+  position: relative;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  &__logo {
+    @media (max-width: 767px) {
+      order: 1;
+      align-self: center;
+    }
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+  }
 }

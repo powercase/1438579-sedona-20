@@ -2,10 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
+    <div class="container">
     <header class="page-header">
       <a class="page-header__logo">
         <img src="img/logo-mobile.svg" width="102" height="84" alt="Логотип Седона">
@@ -37,7 +39,88 @@
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Форма отзыва</h1>
       <img src="https://via.placeholder.com/150x150" width="" height="" alt="Фото Седоны">
+      <section class="review-promo">
+        <h2 class="review-promo__title">оставьте свой отзыв</h2>
+        <p class="review-promo__text">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <form action="https://echo.htmlacademy.ru" method="post" class="info">
+        <fieldset class="info__block">
+          <legend class="info__type">представьтесь:</legend>
+          <ul class="info__data">
+            <li class="info__item">
+              <input type="text" placeholder="Петр" id="name" class="info__input">
+              <label for="name" class="info__label">имя*:</label>
+            </li>
+            <li class="info__item">
+              <input type="text" placeholder="Иванов" id="surname" class="info__input">
+              <label for="surname" class="info__label">фамилия*:</label>
+            </li>
+            <li class="info__item">
+              <input type="text" placeholder="Александрович" id="patronymic" class="info__input">
+              <label for="patronymic" class="info__label">отчество:</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="info__block info__block--contacts">
+          <legend class="info__type">контактная информация:</legend>
+          <ul class="info__data info__data--contacts">
+            <li class="info__item">
+              <input type="tel" placeholder="Введите телефон" id="phone" class="info__input">
+              <label for="phone" class="info__label">контактный телефон*:</label>
+            </li>
+            <li class="info__item">
+              <input type="email" placeholder="Введите e-mail" id="email" class="info__input">
+              <label for="email" class="info__label">электронная почта*:</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="info__block info__block--impression">
+          <legend class="info__type">ваше общее впечатление:</legend>
+          <ul class="info__data info__data--impression">
+            <li class="info__item">
+              <input type="radio" name="impression" value="good" id="positive" class="info__input" checked >
+              <label for="positive" class="info__label">Скорее положительное</label>
+            </li>
+            <li class="info__item">
+              <input type="radio" name="impression" value="bad" class="info__input" id="negative">
+              <label for="negative" class="info__label">Скорее отрицательное</label>
+            </li>
+            <li class="info__item">
+              <input type="radio" name="impression" value="noanswer" class="info__input" id="neutral">
+              <label for="neutral" class="info__label">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="info__block info__block--attractions">
+          <legend class="info__type">посещенные достопримечательности:</legend>
+          <ul class="info__data info__data--attractions">
+            <li class="info__item">
+              <input type="checkbox" name="bridge" id="bridge" class="info__input" checked>
+              <label for="bridge" class="info__label">Мост Дьявола</label>
+            </li>
+            <li class="info__item">
+              <input type="checkbox" name="mountain" id="mountain" class="info__input" checked>
+              <label for="mountain" class="info__label">Гора-Колокол</label>
+            </li>
+            <li class="info__item">
+              <input type="checkbox" name="park" id="park" class="info__input" checked>
+              <label for="park" class="info__label">Слайд-парк</label>
+            </li>
+            <li class="info__item">
+              <input type="checkbox" name="rocks" class="info__input" id="rocks">
+              <label for="rocks" class="info__label">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="info__block info__block--emotions">
+          <legend class="info__type">опишите свои эмоции:</legend>
+          <textarea name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button type="submit" class="info__button">отправить отзыв</button>
+        <p class="info__text">*-обязательные поля</p>
+      </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
@@ -61,5 +144,18 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="" width="" height="" alt="Логотип ШТМЛЬ Академии"></a>
       </div>
     </footer>
+    <div class="popup popup--hidden">
+      <h3 class="popup__title">что-то пошло не так!</h3>
+      <p class="popup__text">проверьте поля, выделенные красным, скорее всего вы забыли их заполниить</p>
+      <button type="button" class="popup__btn popup__btn--fail">ok</button>
+    </div>
+    <div class="popup popup--hidden">
+      <h3 class="popup__title">ваш отзыв отправлен!</h3>
+      <p class="popup__text">спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы опубликуем его на сайте.</p>
+      <div class="popup__btnarea">
+        <button type="button" class="popup__btn popup__btn--success">закрыть окно</button>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
