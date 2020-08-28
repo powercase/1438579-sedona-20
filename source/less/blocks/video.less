@@ -1,5 +1,29 @@
 &__img {
+
+  @media (max-width: 767px) {
   height: 200px;
-  width: 320px;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) (max-width: 1199px) {
+height: 500px;
+  width: 640px;
+}
+
+@media (min-width: @desktop-width) {
+height: 200px;
+  width: 760px;
+}
+
+&__controls {
+  position: relative;
+  height: 45px;
+  width: 280px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: @black;
+  opacity: 60%;
+}
+
 }
 
