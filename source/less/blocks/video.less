@@ -1,29 +1,88 @@
-&__img {
+.video {
+position: relative;
+outline: 1px solid red;
 
-  @media (max-width: 767px) {
-  height: 200px;
-  width: 100%;
+  &__img {
+    @media (max-width: 767px) {
+      height: 200px;
+      width: 100%;
+    }
+
+    @media (min-width: @tablet-width) (max-width: 1199px) {
+      height: 500px;
+      width: 648px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 500px;
+      width: 800px;
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    height: 45px;
+    width: 280px;
+    background-color: @black;
+    opacity: 60%;
+    bottom: 0px;
+    left: 20px;
+    display: block;
+  }
+
+  &__scale {
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    width: 235px;
+    height: 3px;
+    background-color: @white;
+    opacity: 20%;
+  }
+
+  &__toggle {
+  position: absolute;
+  bottom: 20px;
+  left: 80px;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  background-color: @white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  }
+
+  &__wrapper {
+  position: absolute;
+    height: 66px;
+    width: 280px;
+    background-color: @page-background;
+    bottom: -65px;
+    left: 20px;
+    display: block;
+  }
+
+&__replaybtn {
+  position: absolute;
+  bottom: -45px;
+    left: 40px;
+    border: none;
 }
 
-@media (min-width: @tablet-width) (max-width: 1199px) {
-height: 500px;
-  width: 640px;
+&__ссbtn {
+  position: absolute;
+  bottom: -45px;
+    left: 190px;
+    border: none;
 }
 
-@media (min-width: @desktop-width) {
-height: 200px;
-  width: 760px;
+&__widescreenbtn {
+  position: absolute;
+  bottom: -45px;
+    left: 255px;
+    border: none;
 }
 
-&__controls {
-  position: relative;
-  height: 45px;
-  width: 280px;
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: @black;
-  opacity: 60%;
-}
 
 }
-
